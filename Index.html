@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Komik Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
 </head>
-
 <body>
 
-    <header>
-        <span class="hamburger">&#9776;</span>
-        <nav>
-            <a href="#">About</a>
-        </nav>
-        <button class="search-button">Search</button>
-        <button class="black-button">Black</button>
-        <button class="white-button">White</button>
-    </header>
+  <header>
+    <div class="nav-container">
+      <div class="burger-icon">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="comic-icon"></div>
+      <div class="light-dark-buttons">
+        <button class="dark-mode-button">Dark</button>
+        <button class="light-mode-button">Light</button>
+      </div>
+      <div class="search-button"></div>
+    </div>
+  </header>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const hamburger = document.querySelector('.hamburger');
-            const nav = document.querySelector('nav');
+  <!-- Content Goes Here -->
 
-            hamburger.addEventListener('click', function () {
-                nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-            });
-        });
-
-    </script>
+  <script src="script.js"></script>
 </body>
-
 </html>
